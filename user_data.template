@@ -1,0 +1,13 @@
+#!/bin/bash -xe
+exec > >(tee /var/log/user-data.log) 2>&1
+set
+
+apt-get update
+
+apt-get --quiet --assume-yes install git binutils build-essential libssl-dev
+
+apt-get --quiet --assume-yes install nginx
+
+git clone https://github.com/skillbakery/cdstatic.git
+
+tar xzvf ./SkillBakery.tgz --directory /var/www/html
