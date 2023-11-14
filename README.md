@@ -40,8 +40,6 @@ run: |
 
 Using the Terraform configuration provided, this produces the following output on the initial plan:
 
-![Terraform Plan Styled as Markdown with Emojis](./step-summary-example.png)
-
 ## Recommended Reading
 - [Adding a job summary with $GITHUB_STEP_SUMMARY](https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#adding-a-job-summary)
 
