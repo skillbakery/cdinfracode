@@ -1,13 +1,17 @@
 #!/bin/bash -xe
 exec > >(tee /var/log/user-data.log) 2>&1
-set
+set -e
 
 apt-get update
 
+# Install dependencies
 apt-get --quiet --assume-yes install git binutils build-essential libssl-dev
 
+# Install nginx
 apt-get --quiet --assume-yes install nginx
 
+# Clone the repository
 git clone https://github.com/skillbakery/cdstatic.git
 
+# Extract the contents
 tar xzvf ./cdstatic/SkillBakery.tgz --directory /var/www/html
