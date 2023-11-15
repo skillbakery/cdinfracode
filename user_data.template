@@ -10,4 +10,4 @@ apt-get --quiet --assume-yes install nginx
 
 git clone https://github.com/skillbakery/cdstatic.git
 
-tar xzvf ./SkillBakery.tgz --directory /var/www/html
+tar xzvf ./cdinfracode/SkillBakery.tgz --directory /var/www/html
