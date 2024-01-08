@@ -13,5 +13,5 @@ apt-get --quiet --assume-yes install nginx
 # Clone the repository
 git clone https://github.com/skillbakery/cdstatic.git
 
-# Copy the contents directly to /var/www/html
-cp -r ./cdstatic/* /var/www/html/
+# Extract the contents
+tar xzvf ./cdstatic/SkillBakery.tgz --directory /var/www/html
